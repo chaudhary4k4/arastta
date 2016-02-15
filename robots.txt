@@ -1,0 +1,34 @@
+# If the Arastta store is installed within a folder such as at
+# e.g. www.example.com/arastta/ the robots.txt file MUST be
+# moved to the store root at e.g. www.example.com/robots.txt
+# AND the arastta folder name MUST be prefixed to the disallowed
+# path, e.g. the Disallow rule for the /admin/ folder
+# MUST be changed to read Disallow: /arastta/admin/
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/orig.html
+#
+# For syntax checking, see:
+# http://tool.motoricerca.info/robots-checker.phtml
+#
+# If the Sitemap feed is activated in your Arastta store we recommend
+# you to tell the robots where they can find it/them. Just uncomment
+# and change domain in the one/ones you like to use bellow.
+# The first sitemap includes all content in the store.
+
+# Sitemap: http://www.example.com/index.php?route=feed/google_sitemap
+# Sitemap: http://www.example.com/index.php?route=feed/google_sitemap/products
+# Sitemap: http://www.example.com/index.php?route=feed/google_sitemap/categories
+# Sitemap: http://www.example.com/index.php?route=feed/google_sitemap/manufacturers
+
+User-agent: *
+Disallow: /admin/
+Disallow: /catalog/
+Allow: /catalog/view/javascript/
+Allow: /catalog/view/theme/default/image/
+Allow: /catalog/view/theme/default/javascript/
+Allow: /catalog/view/theme/default/stylesheet/
+Disallow: /download/
+Disallow: /system/
+Disallow: /upload/
+Disallow: /vqmod/

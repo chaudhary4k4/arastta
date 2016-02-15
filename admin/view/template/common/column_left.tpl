@@ -1,0 +1,1 @@
+<nav id="column-left" class="<?php echo $class; ?>"><?php echo $menu; ?></nav>
